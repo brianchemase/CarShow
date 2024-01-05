@@ -78,7 +78,7 @@
 				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 				                    <i class="fa fa-bars"></i>
 				                </button>
-				                <a class="navbar-brand" href="index.html">GYBIRD Motors<span></span></a>
+				                <a class="navbar-brand" href="">GYBIRD Motors<span></span></a>
 
 				            </div><!--/.navbar-header-->
 				            <!-- End Header Navigation -->
@@ -373,15 +373,17 @@
 		<section id="featured-cars" class="featured-cars">
 			<div class="container">
 				<div class="section-header">
-					<p>checkout <span>the</span> featured cars</p>
-					<h2>featured cars</h2>
+					<p>checkout <span>Our</span> available cars</p>
+					<h2>Available cars</h2>
 				</div><!--/.section-header-->
 				<div class="featured-cars-content">
 					<div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
-									<div class="featured-cars-img">
+                                
+                                    <div class="featured-cars-img">
+                                    <a href="#">
 										<img src="assets/images/featured-cars/fc1.png" alt="cars">
 									</div>
 									<div class="featured-model-info">
@@ -392,9 +394,10 @@
 											 automatic
 										</p>
 									</div>
+                                    </a>
 								</div>
 								<div class="featured-cars-txt">
-									<h2><a href="#">BMW 6-series gran coupe</a></h2>
+									<h2> <a href="#">BMW 6-series gran coupe </a></h2>
 									<h3>$89,395</h3>
 									<p>
 										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
@@ -402,7 +405,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
@@ -426,7 +429,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
@@ -450,7 +453,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
@@ -476,7 +479,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
@@ -500,7 +503,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
@@ -524,7 +527,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
@@ -548,7 +551,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="col-lg-6 col-md-4 col-sm-6">
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
