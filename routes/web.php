@@ -23,5 +23,6 @@ Route::get('/', [DisplayController::class, 'DisplayLanding'])->name('landing');
 
 
 Route::get('/imagesDrop', [DropzoneController::class,'index']);
+
 Route::post('/imagesupload',[DropzoneController::class,'store'])->name('dropzone.store');
 
