@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DisplayController;
+use App\Http\Controllers\DropzoneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,8 @@ use App\Http\Controllers\DisplayController;
 
 
 Route::get('/', [DisplayController::class, 'DisplayLanding'])->name('landing');
+
+
+Route::get('/imagesDrop', [DropzoneController::class,'index']);
+Route::post('/imagesupload',[DropzoneController::class,'store'])->name('dropzone.store');
 
