@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('body_style');
             $table->string('seats');
             $table->boolean('availability');
+            $table->decimal('price', $precision = 11, $scale = 2);
             $table->timestamps();
         });
     }
