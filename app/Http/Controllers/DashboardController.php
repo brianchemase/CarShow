@@ -20,6 +20,32 @@ class DashboardController extends Controller
         return view('dash.home')->with($data);
     }
 
+    public function RegisterCar()
+    {
+        $contributions="";
+
+        $data=[
+            'contributions' => $contributions,
+            
+
+        ];
+
+        return view('dash.RegisterCarform')->with($data);
+    }
+
+    public function uploadRegisterCar()
+    {
+        $contributions="";
+
+        $data=[
+            'contributions' => $contributions,
+            
+
+        ];
+
+        return view('dash.uploadimagesRegisterCarform')->with($data);
+    }
+
 
     public function table()
     {

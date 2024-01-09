@@ -31,6 +31,10 @@ Route::post('/imagesupload',[DropzoneController::class,'store'])->name('dropzone
 Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/', [DashboardController::class, 'home'])->name('dash');
+    Route::get('/RegCar', [DashboardController::class, 'RegisterCar'])->name('regcar');
+    Route::get('/UploadRegCar', [DashboardController::class, 'uploadRegisterCar'])->name('imageregcar');
+
+
     Route::get('/forms', [DashboardController::class, 'form'])->name('dashform');
     Route::get('/Table', [DashboardController::class, 'table'])->name('dashtable');
     Route::get('/blank', [DashboardController::class, 'home'])->name('dashblank');
