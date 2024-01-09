@@ -17,12 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('manufaturer');
             $table->string('model');
+            $table->year('yom');
+            $table->integer('mileage');
             $table->smallInteger('engine_capacity');
             $table->string('fuel_type');
             $table->string('transmission');
             $table->string('body_style');
             $table->string('seats');
-            $table->integer('mileage');
             $table->boolean('availability');
             $table->timestamps();
         });
