@@ -1,7 +1,7 @@
-@extends('dashone.inc.master')
+@extends('dash.inc.master')
 
 
-@section('title','Dashboard one || Dashboard Forms')
+@section('title','Dashboard || Dashboard Forms')
 
 @section('content')
 

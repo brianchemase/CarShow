@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@yield('title', 'Dash one Templete')</title>
+    <title>@yield('title', 'Dash Templete')</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('dash1/assets/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('dash1/assets/vendors/css/vendor.bundle.base.css')}}">
@@ -29,12 +29,12 @@
     <div class="container-scroller">
       
       <!-- partial:partials/_navbar.html -->
-      @include('dashone.inc.header')
+      @include('dash.inc.header')
       
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
-        @include('dashone.inc.sidebar')
+        @include('dash.inc.sidebar')
        
         <!-- partial -->
         <div class="main-panel">
@@ -42,7 +42,7 @@
           
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          @include('dashone.inc.footer')
+          @include('dash.inc.footer')
           
           <!-- partial -->
         </div>

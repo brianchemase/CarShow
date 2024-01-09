@@ -15,7 +15,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('dashone')}}">
+              <a class="nav-link" href="{{route('dash')}}">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('dashonetable')}}">
+              <a class="nav-link" href="{{route('dashtable')}}">
                 <span class="menu-title">Forms</span>
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
@@ -52,7 +52,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('dashonetable')}}">
+              <a class="nav-link" href="{{route('dashtable')}}">
                 <span class="menu-title">Tables</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>

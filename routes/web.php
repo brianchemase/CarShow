@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DisplayController;
 use App\Http\Controllers\DropzoneController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,9 +30,9 @@ Route::post('/imagesupload',[DropzoneController::class,'store'])->name('dropzone
 //Admin Dashboard
 Route::group(['prefix' => 'admins'], function() {
 
-    Route::get('/', [DashboardOneController::class, 'home'])->name('dashone');
-    Route::get('/forms', [DashboardOneController::class, 'form'])->name('dashoneform');
-    Route::get('/Table', [DashboardOneController::class, 'table'])->name('dashonetable');
-    Route::get('/blank', [DashboardOneController::class, 'home'])->name('dashoneblank');
+    Route::get('/', [DashboardController::class, 'home'])->name('dash');
+    Route::get('/forms', [DashboardController::class, 'form'])->name('dashform');
+    Route::get('/Table', [DashboardController::class, 'table'])->name('dashtable');
+    Route::get('/blank', [DashboardController::class, 'home'])->name('dashblank');
 });
 
