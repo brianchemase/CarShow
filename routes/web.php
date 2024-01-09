@@ -26,3 +26,12 @@ Route::get('/imagesDrop', [DropzoneController::class,'index']);
 
 Route::post('/imagesupload',[DropzoneController::class,'store'])->name('dropzone.store');
 
+//Admin Dashboard
+Route::group(['prefix' => 'admins'], function() {
+
+    Route::get('/', [DashboardOneController::class, 'home'])->name('dashone');
+    Route::get('/forms', [DashboardOneController::class, 'form'])->name('dashoneform');
+    Route::get('/Table', [DashboardOneController::class, 'table'])->name('dashonetable');
+    Route::get('/blank', [DashboardOneController::class, 'home'])->name('dashoneblank');
+});
+
