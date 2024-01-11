@@ -13,25 +13,27 @@ class DashboardController extends Controller
 
         $data=[
             'contributions' => $contributions,
-            
+
 
         ];
 
         return view('dash.home')->with($data);
     }
 
+    /*
     public function RegisterCar()
     {
         $contributions="";
 
         $data=[
             'contributions' => $contributions,
-            
+
 
         ];
 
         return view('dash.RegisterCarform')->with($data);
     }
+    */
 
     public function uploadRegisterCar()
     {
@@ -39,7 +41,7 @@ class DashboardController extends Controller
 
         $data=[
             'contributions' => $contributions,
-            
+
 
         ];
 
@@ -53,7 +55,7 @@ class DashboardController extends Controller
 
         $data=[
             'contributions' => $contributions,
-            
+
 
         ];
 
@@ -66,7 +68,7 @@ class DashboardController extends Controller
 
         $data=[
             'contributions' => $contributions,
-            
+
 
         ];
 

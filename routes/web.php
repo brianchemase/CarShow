@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DisplayController;
 use App\Http\Controllers\DropzoneController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\VehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,8 +32,8 @@ Route::post('/imagesupload',[DropzoneController::class,'store'])->name('dropzone
 Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/', [DashboardController::class, 'home'])->name('dash');
-    Route::get('/RegCar', [DashboardController::class, 'RegisterCar'])->name('regcar');
-    Route::get('/UploadRegCar', [DashboardController::class, 'uploadRegisterCar'])->name('imageregcar');
+    //Route::get('/RegCar', [DashboardController::class, 'RegisterCar'])->name('regcar');
+    //Route::get('/UploadRegCar', [DashboardController::class, 'uploadRegisterCar'])->name('imageregcar');
 
 
     Route::get('/forms', [DashboardController::class, 'form'])->name('dashform');
@@ -40,3 +41,10 @@ Route::group(['prefix' => 'admins'], function() {
     Route::get('/blank', [DashboardController::class, 'home'])->name('dashblank');
 });
 
+//Vehicles management
+
+Route::group(['prefix' => 'vehicles'], function(){
+//show create form
+    Route::get('/advert/create', [VehicleController::class, 'create'])->name('createAd');
+
+});

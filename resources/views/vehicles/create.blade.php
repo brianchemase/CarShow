@@ -26,8 +26,8 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">First Name</label>
-                                        <div class="col-sm-9">
+                                        <label class="col-sm-4 col-form-label">Manufacturer</label>
+                                        <div class="col-sm-8">
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
@@ -35,8 +35,8 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Last Name</label>
-                                        <div class="col-sm-9">
+                                        <label class="col-sm-4 col-form-label">Model</label>
+                                        <div class="col-sm-8">
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
@@ -47,20 +47,23 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Gender</label>
-                                        <div class="col-sm-9">
+                                        <label class="col-sm-4 col-form-label">Fuel</label>
+                                        <div class="col-sm-8">
                                             <select class="form-control">
-                                                <option>Male</option>
-                                                <option>Female</option>
+                                                <option>Petrol</option>
+                                                <option>Diesel</option>
+                                                <option>Petrol Hybrid</option>
+                                                <option>Diesel Hybrid</option>
+                                                <option>Electric</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Date of Birth</label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" placeholder="dd/mm/yyyy">
+                                        <label class="col-sm-4 col-form-label">Year of Manufacture</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="number" min="1900" max="2099" step="1" value="2016" />
                                         </div>
                                     </div>
                                 </div>
@@ -68,98 +71,77 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Category</label>
-                                        <div class="col-sm-9">
+                                        <label class="col-sm-4 col-form-label">Engine Capacity(in cc)</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="number" min="10" max="20000" step="1" value="1300" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label">Transmission</label>
+                                        <div class="col-sm-8">
                                             <select class="form-control">
-                                                <option>Category1</option>
-                                                <option>Category2</option>
-                                                <option>Category3</option>
-                                                <option>Category4</option>
+                                                <option>Automatic</option>
+                                                <option>Manual</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label">Body style</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control">
+                                                <option>Saloon</option>
+                                                <option>Station Wagon</option>
+                                                <option>Coupe</option>
+                                                <option>Convertible</option>
+                                                <option>Mini SUV</option>
+                                                <option>SUV</option>
+                                                <option>Mini Van</option>
+                                                <option>Van</option>
+                                                <option>Single Cabin pickup</option>
+                                                <option>Double Cabin pickup</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Membership</label>
-                                        <div class="col-sm-4">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="membershipRadios"
-                                                        id="membershipRadios1" value="" checked=""> New Car <i
-                                                        class="input-helper"></i></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="membershipRadios"
-                                                        id="membershipRadios2" value="option2"> Used Car <i
-                                                        class="input-helper"></i></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="card-description"> Address </p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Address 1</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">State</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Address 2</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Postcode</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">City</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Country</label>
-                                        <div class="col-sm-9">
+                                        <label class="col-sm-4 col-form-label">Condition</label>
+                                        <div class="col-sm-8">
                                             <select class="form-control">
-                                                <option>America</option>
-                                                <option>Italy</option>
-                                                <option>Russia</option>
-                                                <option>Britain</option>
+                                                <option>New Local Assembly</option>
+                                                <option>Used Local Assembly</option>
+                                                <option>New import</option>
+                                                <option>Locally used import</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label">Mileage</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="number" min="0" max="20000000" step="1" value="0" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label">Seats</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="number" min="1" max="100" step="1" value="1" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-gradient-primary me-2">Next</button>
                                     <button class="btn btn-light">Cancel</button>
