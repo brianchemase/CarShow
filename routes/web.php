@@ -47,4 +47,6 @@ Route::group(['prefix' => 'vehicles'], function(){
 //show create form
     Route::get('/advert/create', [VehicleController::class, 'create'])->name('createAd');
 
+//store advert
+    Route::post('/advert/create', [VehicleController::class, 'store'])->name('storeAd');
 });

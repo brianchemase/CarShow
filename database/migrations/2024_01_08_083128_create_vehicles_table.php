@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('vehicle_information', function (Blueprint $table) {
+        Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
             $table->string('manufaturer');
             $table->string('model');
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('fuel_type');
             $table->string('transmission');
             $table->string('body_style');
+            $table->string('condition');
             $table->string('seats');
             $table->boolean('availability');
             $table->decimal('price', $precision = 11, $scale = 2);
