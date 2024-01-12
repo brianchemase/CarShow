@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Vehicle;
+use App\Models\VehicleImage;
 use Illuminate\Http\Request;
 
 use function PHPUnit\Framework\isTrue;
@@ -27,17 +28,21 @@ class VehicleController extends Controller
             'fuel_type' => 'required',
             'transmission' => 'required',
             'body_style' => 'required',
-            'condition' => 'required',
+            'car_condition' => 'required',
             'seats' => 'required',
-            'image' => ['nullable', 'mimes:jpg,jpeg,png'],
+            'mileage' => 'required',
+            'images.*' => ['nullable', 'mimes:jpg,jpeg,png'],
             'price' => 'required'
         ]);
 
         //set the ad to be available by default
         $formFields['availability'] = '1';
 
+        //dd($formFields);
+
         $formFieldData = Vehicle::create($formFields);
 
+        dd($formFieldData);
         // Handle Dropzone file uploads
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
@@ -45,7 +50,9 @@ class VehicleController extends Controller
                 $image->move(public_path('moti_images'),$filename);
 
                 // Create image record
-                $formFieldData->vehicle_images()->create(['filename' => $filename]);
+                $formFieldData->vehicle_images()->create([
+                    'filename' => $filename]
+                );
             }
         }
     }

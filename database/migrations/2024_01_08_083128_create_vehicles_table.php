@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
-            $table->string('manufaturer');
+            $table->string('manufacturer');
             $table->string('model');
             $table->year('yom');
             $table->integer('mileage');
@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('fuel_type');
             $table->string('transmission');
             $table->string('body_style');
-            $table->string('condition');
+            $table->string('car_condition');
             $table->string('seats');
             $table->boolean('availability');
             $table->decimal('price', $precision = 11, $scale = 2);

@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Register Car Details</h4>
-                        <form class="form-sample" enctype="multipart/form-data" method="POST">
+                        <form action="{{route('storeAd')}}" class="form-sample dropzone" enctype="multipart/form-data" method="POST" id="myDropzone">
                             @csrf
                             <p class="card-description"> Motor Vehicle info </p>
                             <div class="row">
@@ -114,8 +114,8 @@
                                     <div class="form-group row">
                                         <label class="col-sm-4 col-form-label">Condition</label>
                                         <div class="col-sm-8">
-                                            <select name="condition" class="form-control">
-                                                <option value="New Local Assembly">New Local Assembly</option>
+                                            <select name="car_condition" class="form-control">
+                                                <option value="Local Assembly">Local Assembly</option>
                                                 <option value="Used Local Assembly">Used Local Assembly</option>
                                                 <option value="Fresh import">Fresh import</option>
                                                 <option value="Locally used import">Locally used import</option>
@@ -127,9 +127,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label">Mileage</label>
+                                        <label class="col-sm-4 col-form-label">Mileage (in kms)</label>
                                         <div class="col-sm-8">
-                                            <input class="form-control" name="mileage" type="number" min="0" max="20000000" step="1" value="0" />
+                                            <input class="form-control" name="mileage" type="number" min="0" max="20000000" step="1" />
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +147,15 @@
                                     <div class="form-group row">
                                         <label class="col-sm-4 col-form-label">Price</label>
                                         <div class="col-sm-8">
-                                            <input class="form-control" name="price" type="number" min="1" max="100" step=".01" value="{{old('price')}}" />
+                                            <input class="form-control" name="price" type="number" min="1" step=".01" value="{{old('price')}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label">Price</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="file" name="images[]" multiple>
                                         </div>
                                     </div>
                                 </div>
@@ -162,5 +170,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        Dropzone.options.myDropzone = {
+            paramName: "images", // The name that will be used to transfer the file
+            maxFilesize: 5, // MB
+            acceptedFiles: "image/*", // Allow only image files
+            init: function () {
+                this.on("success", function (file, response) {
+                    // Handle success, if needed
+                });
+            }
+        };
+    </script>
+
 
 @endsection

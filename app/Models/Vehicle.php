@@ -15,8 +15,9 @@ class Vehicle extends Model
         'fuel_type',
         'transmission',
         'body_style',
-        'condition',
+        'car_condition',
         'seats',
+        'mileage',
         'image',
         'price',
         'availability'
