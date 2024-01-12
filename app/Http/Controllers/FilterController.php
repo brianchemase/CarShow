@@ -11,11 +11,16 @@ class FilterController extends Controller
     {
         // Get all request parameters
         $params = $request->all();
+        
 
-        return $params;
+        
+
+        //return $params;
 
         // Remove any parameters with empty values
         $params = array_filter($params);
+        $vehicles=$params;
+        return view('vehicle.index', compact('vehicles'));
 
         // Start building the query
         $query = DB::table('vehicle_information');
@@ -29,6 +34,6 @@ class FilterController extends Controller
         // Get the filtered results
         $vehicles = $query->get();
 
-        return view('vehicle.index', compact('vehicles'));
+        
     }
 }
