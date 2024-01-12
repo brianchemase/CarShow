@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DisplayController;
 use App\Http\Controllers\DropzoneController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FilterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,8 @@ Route::get('/', [DisplayController::class, 'DisplayLanding'])->name('landing');
 Route::get('/imagesDrop', [DropzoneController::class,'index']);
 
 Route::post('/imagesupload',[DropzoneController::class,'store'])->name('dropzone.store');
+
+Route::get('/vehicles/search', [FilterController::class,'search'])->name('filtercar');
 
 //Admin Dashboard
 Route::group(['prefix' => 'admins'], function() {

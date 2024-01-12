@@ -117,37 +117,30 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="model-search-content">
-                            <form action="" method="POST">
+                            <form action="{{ route('filtercar') }}" method="GET">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-offset-1 col-md-2 col-sm-12">
                                         <div class="single-model-search">
-                                            <h2>select year</h2>
+                                            <h2>Transmission</h2>
                                             <div class="model-select-icon">
-                                                <select class="form-control">
-
-                                                    <option value="default">year</option><!-- /.option-->
-
-                                                    <option value="2018">2018</option><!-- /.option-->
-
-                                                    <option value="2017">2017</option><!-- /.option-->
-                                                    <option value="2016">2016</option><!-- /.option-->
-
+                                                <select class="form-control" name="transmission">
+													<option disabled selected>Pick Transmission</option><!-- /.option-->
+                                                    <option value="automatic">Automatic</option><!-- /.option-->
+                                                    <option value="manual">Manual</option><!-- /.option-->
+                                                    <option value="hybrid">Hybrid</option><!-- /.option-->
+                                                    
                                                 </select><!-- /.select-->
                                             </div><!-- /.model-select-icon -->
                                         </div>
                                         <div class="single-model-search">
-                                            <h2>body style</h2>
+                                            <h2>Fuel Type</h2>
                                             <div class="model-select-icon">
-                                                <select class="form-control">
-
-                                                    <option value="default">style</option><!-- /.option-->
-
-                                                    <option value="sedan">sedan</option><!-- /.option-->
-
-                                                    <option value="van">van</option><!-- /.option-->
-                                                    <option value="roadster">roadster</option><!-- /.option-->
-
+                                                <select class="form-control" name="fuel_type">
+                                                    <option value="petrol">Petrol</option><!-- /.option-->
+                                                    <option value="deisel">Deisel</option><!-- /.option-->
+                                                    <option value="hybrid">Hybrid</option><!-- /.option-->
+													<option value="electric">Electric</option><!-- /.option-->
                                                 </select><!-- /.select-->
                                             </div><!-- /.model-select-icon -->
                                         </div>
@@ -156,7 +149,7 @@
                                         <div class="single-model-search">
                                             <h2>select make</h2>
                                             <div class="model-select-icon">
-                                                <select class="form-control">
+                                                <select class="form-control" name="make">
 
                                                     <option value="default">make</option><!-- /.option-->
 
@@ -171,14 +164,12 @@
                                         <div class="single-model-search">
                                             <h2>car condition</h2>
                                             <div class="model-select-icon">
-                                                <select class="form-control">
+                                                <select class="form-control" name="condition">
 
-                                                    <option value="default">condition</option><!-- /.option-->
-
-                                                    <option value="something">something</option><!-- /.option-->
-
-                                                    <option value="something">something</option><!-- /.option-->
-                                                    <option value="something">something</option><!-- /.option-->
+                                                    <option disabled selected>select Condition</option><!-- /.option-->
+                                                    <option value="new">New</option><!-- /.option-->
+                                                    <option value="used">Used</option><!-- /.option-->
+                                                   
 
                                                 </select><!-- /.select-->
                                             </div><!-- /.model-select-icon -->
@@ -188,12 +179,9 @@
                                         <div class="single-model-search">
                                             <h2>select model</h2>
                                             <div class="model-select-icon">
-                                                <select class="form-control">
-
+                                                <select class="form-control" name="model">
                                                     <option value="default">model</option><!-- /.option-->
-
                                                     <option value="kia-rio">kia-rio</option><!-- /.option-->
-
                                                     <option value="mitsubishi">mitsubishi</option><!-- /.option-->
                                                     <option value="ford">ford</option><!-- /.option-->
 
@@ -201,16 +189,17 @@
                                             </div><!-- /.model-select-icon -->
                                         </div>
                                         <div class="single-model-search">
-                                            <h2>select price</h2>
+                                            <h2>Select Car Seats</h2>
                                             <div class="model-select-icon">
-                                                <select class="form-control">
-
-                                                    <option value="default">price</option><!-- /.option-->
-
-                                                    <option value="$0.00">$0.00</option><!-- /.option-->
-
-                                                    <option value="$0.00">$0.00</option><!-- /.option-->
-                                                    <option value="$0.00">$0.00</option><!-- /.option-->
+                                                <select class="form-control" name="seats">
+                                                    <option value="default">2</option><!-- /.option-->
+                                                    <option value="3">3</option><!-- /.option-->
+                                                    <option value="4">4</option><!-- /.option-->
+                                                    <option value="5">5</option><!-- /.option-->
+													<option value="6">6</option><!-- /.option-->
+													<option value="7">7</option><!-- /.option-->
+													<option value="11">11</option><!-- /.option-->
+													<option value="14">14</option><!-- /.option-->
 
                                                 </select><!-- /.select-->
                                             </div><!-- /.model-select-icon -->
@@ -218,9 +207,9 @@
                                     </div>
                                     <div class="col-md-2 col-sm-12">
                                         <div class="single-model-search text-center">
-                                            <button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
-                                                search
-                                            </button>
+											<button type="submit" class="welcome-btn model-search-btn">
+												Search
+											</button>
                                         </div>
                                     </div>
                                 </div>
