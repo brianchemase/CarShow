@@ -42,7 +42,6 @@ class VehicleController extends Controller
 
         $formFieldData = Vehicle::create($formFields);
 
-        dd($formFieldData);
         // Handle Dropzone file uploads
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
@@ -50,7 +49,8 @@ class VehicleController extends Controller
                 $image->move(public_path('moti_images'),$filename);
 
                 // Create image record
-                $formFieldData->vehicle_images()->create([
+                VehicleImage::create([
+                    'vehicle_id'=> $formFieldData['id'],
                     'filename' => $filename]
                 );
             }
